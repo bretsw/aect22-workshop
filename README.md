@@ -1,9 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# \#aectRTD workshop
-
-### Remembering You’re Just One in 11: An Introduction to Social Network Analysis
+# Remembering You’re Just One in 11: An Introduction to Social Network Analysis
 
 K. Bret Staudt Willet \| Florida State University
 

@@ -206,7 +206,7 @@ class: inverse, center, middle
 
 # `r fa("fas fa-code", fill = "#fff")` <br><br> Try it out!
 
-Hop over to [**Workspace 1**](workspace1.Rmd)
+Hop over to [**Workspace 2**](workspace2.Rmd)
 
 ---
 
