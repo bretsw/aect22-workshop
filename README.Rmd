@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  out.width = "100%",
+  message = FALSE
+)
+
+library(fontawesome)
+```
+
+# \#aectRTD workshop
+
+### Remembering You're Just One in 11: An Introduction to Social Network Analysis
+
+K. Bret Staudt Willet | Florida State University
+
+Friday, March 4, 2022
+
+1pm-4pm EST
+
+<hr>
+
+`r fa("fas fa-quote-left", fill = "#000")` I think that you might be so sure that you're one in a million, that sometimes you forget that out there you're just one in 11. `r fa("fas fa-quote-right", fill = "#000")` 
+
+&ndash; Ted Lasso
+
+<hr>
+
+```{r, out.width = "100%", echo = FALSE, fig.align = "center"}
+knitr::include_graphics("img/intro-networks.jpg")
+```
+
+## Homebase
+
+```{r child="chunks/homebase.Rmd"} 
+```
+
+## Agenda
+
+```{r child="chunks/agenda.Rmd"} 
+```
+
+## Need help? Reach out!
+
+```{r child="chunks/help.Rmd"} 
+```
+
+## Workshop Description
+
+```{r child="chunks/abstract.Rmd"} 
+```

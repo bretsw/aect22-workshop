@@ -1,0 +1,3 @@
+- **Workshop website:** https://bretsw.github.io/aect22-workshop
+- **Workshop code repository:** https://github.com/bretsw/aect22-workshop
+- **tidytags R package:** https://github.com/ropensci/tidytags

@@ -1,0 +1,22 @@
+### Workshop Goals
+
+"I think that you might be so sure that you're one in a million, that sometimes you forget that out there you're just one in 11." - Ted Lasso
+
+So many aspects of the world around us are connected and interact with one another. Sometimes our attention focuses on a single person or a single element, but thinking about *networks* helps us take a step back and consider the larger systems. *Social network analysis* is a rigorous approach to describe and infer patterns in systems of interacting parts.
+
+In this workshop, I will provide guidance for understanding and exploring networks. Abstract principles will be grounded by using R to analyze a dataset that is likely of interest to many AECT participants: tweets related to the AECT 2019 convention.
+
+Specific learning objectives of this workshop include: 
+
+1. To define what a network is
+2. To describe some of the basic characteristics of networks
+3. To understand the range of approaches to analyzing networks, both descriptive and inferential
+4. To reflect on larger, conceptual issues related to researching networks, such as research ethics and research paradigms
+5. To help beginners get past the intimidation of programming in R 
+6. To demonstrate a workflow for collecting and processing Twitter data to analyze networks, all using the [tidytags](https://docs.ropensci.org/tidytags/index.html) R package.
+
+### Who This Workshop is For
+
+The level of instruction will be suitable for participants looking for an introduction to networks and new to using R. This workshop is for both researchers and practitioners interested in using new computational research methods in their work, from a wide variety of scholarly and professional backgrounds. There are no suggested prerequisites for attending.
+
+Not that long ago, I too was a beginner in thinking about networks, conducting social media research, and using R. I remember what it was like to get started, and I enjoy helping others take those first steps in a better supported and less painful way.

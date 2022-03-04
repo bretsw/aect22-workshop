@@ -1,0 +1,8 @@
+- **Part 1: Introduction to Networks**
+  - Slides: [Part 1 - Networks](1-networks.html)
+- **Part 2: Introduction to R**
+  - Slides: [Part 2 - R](2-intro-R.html)
+- **Part 3: Network Description**
+  - Slides: [Part 3 - Description](3-description.html)
+- **Part 4: Network Inference**
+  - Slides: [Part 4 - Inference](4-inference.html)
