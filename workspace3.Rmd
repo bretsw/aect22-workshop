@@ -1,0 +1,92 @@
+---
+title: "Workspace for Part 3: Network Description"
+author: 
+output: html_document
+---
+
+## Loading, setting up 
+
+Do you remember how to get started? 
+
+Load the required packages by clicking the green arrow:
+
+```{r, message=FALSE}
+if (!require(tidyverse)) install.packages('tidyverse')
+library(tidyverse)
+
+if (!require(tidygraph)) install.packages('igraph')
+library(igraph)
+
+if (!require(tidygraph)) install.packages('tidygraph')
+library(tidygraph)
+
+if (!require(ggraph)) install.packages('ggraph')
+library(ggraph)
+
+if (!require(ggraph)) install.packages('ggthemes')
+library(ggthemes)
+
+if (!require(ggraph)) install.packages('cowplot')
+library(cowplot)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+Now, let's load our data from the classroom interactions dataset:
+
+```{r}
+edgelist1 <- 
+  read_csv("data/meteakca_edgelist.csv", 
+           show_col_types = FALSE) %>%
+  mutate(group = week,
+         week = substr(week, 1, 1)
+         ) %>% 
+  group_by(from, to) %>% 
+  mutate(weight = n())
+```
+
+Let's start by using the `head()` function to look at the first 10 rows of the dataset. This is a helpful reminder of the variables and types of data.
+
+```{r}
+head(edgelist1, 10)
+```
+
+In the Part 3 slides, we looked at all class interaction data together. But, the reality is that these interactions all occurred within discrete weeks of the semester. It would be better to look at the data within the 6 different weeks.
+
+Try using `filter()` to only look at interactions from Week 1.
+
+When you're ready, click the green arrow to view the result.
+
+If you add to this code, change the chunk option `eval=FALSE` to `eval=TRUE`. Then, hit "Knit" above to recreate your PDF report with this new information.
+
+```{r, eval=FALSE}
+edgelist1 %>% 
+  filter(week == "")
+
+
+```
+
+Now, try saving this to a variable called `week1`, and then calculate the descriptive network statistics detailed in the Part 3 slides?
+
+```{r, eval=FALSE}
+igraph::gorder(week1)
+igraph::gsize(week1)
+
+
+```
+
+Can you start to put the pieces together and compare **reciprocity** in Week 1 versus Week 2? How about **transitivity** across all six weeks?
+
+```{r, eval=FALSE}
+
+
+```
+
+Finally, see if you can figure out how to create sociograms (i.e., network visualizations) of all six weeks of classroom interactions. What do you notice?
+
+```{r, eval=FALSE}
+
+
+```

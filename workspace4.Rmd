@@ -1,0 +1,101 @@
+---
+title: "Workspace for Part 4: Network Inference"
+author: 
+output: html_document
+---
+
+## Loading, setting up 
+
+Do you remember how to get started? 
+
+Load the required packages by clicking the green arrow:
+
+```{r, message=FALSE}
+if (!require(tidyverse)) install.packages('tidyverse')
+library(tidyverse)
+
+if (!require(igraph)) install.packages('igraph')
+library(igraph)
+
+if (!require(tidygraph)) install.packages('tidygraph')
+library(tidygraph)
+
+if (!require(ggraph)) install.packages('ggraph')
+library(ggraph)
+
+if (!require(ggthemes)) install.packages('ggthemes')
+library(ggthemes)
+
+if (!require(cowplot)) install.packages('cowplot')
+library(cowplot)
+
+if (!require(cowplot)) install.packages('cowplot')
+library(cowplot)
+
+if (!require(tidytags)) install.packages('tidytags', repos = 'https://ropensci.r-universe.dev')
+library(tidytags)
+
+if (!require(brms)) install.packages('brms')
+library(brms)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+Now, let's load our data from the Twitter dataset:
+
+```{r}
+edgelist3full <-
+  read_csv("data/tidytags-edgelist-full.csv", 
+           show_col_types = FALSE)
+```
+
+Let's start by using the `head()` function to look at the first 10 rows of the dataset. This is a helpful reminder of the variables and types of data.
+
+```{r}
+head(edgelist3full, 10)
+```
+
+Notice that our Twitter edgelist has the usual columns of `sender` and `receiver` but also has a third column `edge_type`. Similar to your process in workspace3, try using `filter()` to only look at interactions within specific tweet types.
+
+When you're ready, click the green arrow to view the result.
+
+If you add to this code, change the chunk option `eval=FALSE` to `eval=TRUE`. Then, hit "Knit" above to recreate your PDF report with this new information.
+
+```{r, eval=FALSE}
+edgelist3full %>% 
+  filter(edge_type == "")
+
+
+```
+
+From here, you could replicate the work you did in workspace3 to evaluate the network with descriptive measures split out by each tweet type.
+
+For a bit more of a challenge, try to replicate the inferential measure of clustering. You could do this to see if clusters exist when all tweet interactions are taken together, or if there are clusters within how tweeters **reply** to one another. You can use the Part 4 slides as a guide.
+
+```{r, eval=FALSE}
+edgelist3full %>% 
+
+
+```
+
+If you add to this code, change the chunk option `eval=FALSE` to `eval=TRUE`. Then, hit "Knit" above to recreate your PDF report with this new information.
+
+Finally, although there was not time to properly cover **influence** and **selection** in the Part 4 slides, refer to [Rosenberg et al.'s (2020)](https://doi.org/10.1002/tea.21660) paper to see how they approached constructing these inferential statistical models.
+
+After a thorough read (and likely a reread or two), see if you can piece together an influence or selection model for our current dataset. The `add_users_data()` function from the [**tidytags** R package](https://docs.ropensci.org/tidytags/index.html) can help you easily add lots of user data to our existing edgelist.
+
+```{r, eval=FALSE}
+edgelist_with_user_data <-
+  edgelist3full %>% 
+  tidytags::add_users_data()
+```
+
+With this starting point, use the [**brms** R package](https://paul-buerkner.github.io/brms/) and ideas from Rosenberg et al. (2020) to build these models.
+
+```{r, eval=FALSE}
+edgelist_with_user_data %>%
+  
+  
+```
